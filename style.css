@@ -1,0 +1,412 @@
+/* This bit is for css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Below is where the style begins */
+body {
+    background-color: hsl(185, 41%, 84%);
+    font-family: "Space Mono", monospace;
+}
+
+html {
+    font-family: "Space Mono", monospace;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    margin: 0 auto;
+    width: 450px;
+    height: auto;
+    font-family: "Space Mono", monospace;
+}
+
+#logo-image-container {
+    display: flex;
+    height: auto;
+    width: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#logo-image {
+    width: 100%;
+    height: 100%;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(189, 41%, 97%);
+    width: 300px;
+    height: auto;
+    padding-bottom: 10%;
+    border-radius: 20px;
+}
+
+#inside-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#amount-enter {
+    padding-top: 5%;
+}
+
+#bill {
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 3%;
+}
+
+#money-input{
+    width: 250px;
+    text-align: right;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 3% 2% 3% 3%;
+    background-image: url("images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-color: hsl(180, 63%, 92%);
+    border: none;
+    border-radius: 5px;
+}
+
+#select-tip {
+    width: 250px;
+    padding-top: 5%;
+}
+
+#tip-percentage {
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 3%;
+    margin-left: 0;
+}
+
+#tips {
+    width: 300px;
+    display: flexbox;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.tip-button {
+    background-color: hsl(183, 100%, 15%);
+    margin-right: 30px;
+    margin-bottom: 5%;
+    width: 100px;
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    font-size: 17px;
+    color: hsl(189, 41%, 97%);
+    border: none;
+    border-radius: 10px;
+    font-family: "Space Mono", monospace;
+    transition: ease-in;
+}
+
+.tip-button:hover {
+    background-color: hsl(186, 14%, 43%);
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+
+
+#custom {
+    background-color: hsl(180, 63%, 92%);
+    color: hsl(186, 21%, 48%);
+    text-align: center;
+    padding: 10px 15px 10px 5px;
+    width: 75px;
+    border: none;
+    border-radius: 10px;
+    font-family: "Space Mono", monospace;
+    font-family: "Space Mono", monospace;
+}
+
+#custom:hover {
+    cursor: pointer;
+}
+
+#number-people {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#warning {
+    text-align: left;
+    visibility: visible;
+    font-size: 14px;
+    color: red;
+}
+
+#text-number {
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 3%;
+}
+
+#people-input {
+    width: 250px;
+    text-align: right;
+    font-weight: 700;
+    font-size: 17px;
+    padding: 3% 2% 3% 3%;
+    background-image: url("images/icon-person.svg");
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-color: hsl(180, 63%, 92%);
+    border: none;
+    border-radius: 5px; 
+}
+
+#sum-card {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding-bottom: 5%;
+    border-radius: 20px;
+    margin-left: 3%;
+    margin-top: 5%;
+    background-color: hsl(183, 100%, 15%);
+}
+
+#tip-amount {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: row;
+}
+
+#tip-money {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 1%;
+    float: left;
+    margin-left: auto ;
+    margin-right: 12%;
+    color: hsl(184, 14%, 56%);
+}
+
+#tip-amount-text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+#tip-amount-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+}
+
+.person {
+    margin-top: 5%;
+    font-size: 10px;
+    font-weight: 500;
+    color: hsl(184, 14%, 56%);
+}
+
+#total-amount {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+#total-amount-text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+#total-amount-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+}
+
+#total-money {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 1%;
+    float: left;
+    margin-left: auto ;
+    margin-right: 12%;
+    color: hsl(184, 14%, 56%);
+}
+
+
+#reset {
+    margin-top: 10%;
+    margin-left: 8%;
+    width: 200px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: hsl(186, 14%, 43%);
+    color: hsl(183, 100%, 15%);
+    font-family: "Space Mono", monospace;
+}
+
+@media(min-width: 500px) {
+    #main {
+        width: 800px;
+    }
+
+    #card {
+        width: 800px;
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    #inside-elements {
+        overflow: hidden;
+        width: 100%;
+        flex-direction: row;
+        align-items: normal;
+        margin-left: 5%;
+    }
+    
+    #inside-text-elements {
+        margin-top: 2%;
+        width: 50%;
+    }
+
+    #sum-card {
+        width: 40%;
+    }
+
+    #amount-enter {
+        width: 100%;
+    }
+
+    #money-input {
+        width: 90%;
+    }
+
+    #select-tip {
+        width: 100%;
+    }
+
+    #tips {
+        width: 100%;
+    }
+
+    #tip-amount {
+        margin-left: 3%;
+    }
+
+    .tip-button {
+        width: 24%;
+    }
+
+    .tip-button:hover {
+        background-color: hsl(185, 41%, 84%);
+        color: hsl(183, 100%, 15%);
+        cursor: pointer;
+    }
+
+    #tip-money {
+        font-size: 30px;
+        margin-right: 17%;
+    }
+
+    #people-input {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #text-number{
+        display: flex;
+        flex-direction: row;
+    }
+
+    #warning {
+        display: none;
+        font-size: 14px;
+        margin-top: 3px;
+        margin-left: 20%;
+        color: red;
+    }
+
+    #total-amount {
+        margin-top: 15%;
+        margin-left: 3%;
+    }
+
+    #total-money {
+        font-size: 30px;
+        margin-right: 17%;
+    }
+
+    .person {
+        margin-top: 15%;
+    }
+
+    #reset {
+        margin-top: 35%;
+        margin-left: 10%;
+        padding: 5px 50px;
+        width: 80%;
+    }
+
+    #reset:hover {
+        background-color: hsl(185, 41%, 84%);
+        color: hsl(183, 100%, 15%);
+        cursor: pointer;
+    }
+}

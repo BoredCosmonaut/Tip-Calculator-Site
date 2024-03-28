@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <title>Tip calculator app</title>
+</head>
+<body>
+  <section id="main">
+    <div id="logo-image-container">
+      <img src="images/logo.svg" alt="" id="logo-image">
+    </div>
+    <section id="card">
+      <div id="inside-elements">
+        <section id="inside-text-elements">
+          <div id="amount-enter">
+          <p id="bill">Bill</p>
+          <input type="text" placeholder="Amount" id="money-input" maxlength="25" required>
+          </div>
+          <div id="select-tip">
+            <p id="tip-percentage">Select Tip %</p>
+            <div id="tips">
+              <button id="five" class="tip-button">5%</button>
+              <button id="ten" class="tip-button">10%</button>
+              <button id="fifteen" class="tip-button">15%</button>
+              <button id="twenty-five" class="tip-button">25%</button>
+              <button id="fifty" class="tip-button">50%</button>
+              <input type="text" id="custom" placeholder="Custom" maxlength="2">
+            </div>
+          </div>
+          <div id="number-people">
+            <p id="text-number">Number of People <br><span id="warning">Can't be zero</span></p>
+            <input type="text" placeholder="Amount" id="people-input" maxlength="25" required>
+          </div>
+        </section>
+        <div id="sum-card">
+          <div id="tip-amount">
+            <div id="tip-amount-text-container">
+              <p id="tip-amount-text">Tip Amount</p>
+              <p class="person">/ person</p>
+            </div>
+            <p id="tip-money">$0.00</p>
+          </div>
+          <div id="total-amount">
+            <div id="total-amount-text-container">
+              <p id="total-amount-text">Total</p>
+              <p class="person">/ person</p>
+            </div>
+            <p id="total-money">$0.00</p>
+          </div>
+          <button id="reset">Reset</button>
+        </div>        
+      </div>
+    </section>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
